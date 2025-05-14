@@ -1,0 +1,15 @@
+div {
+    background-color: red;
+    color: white;
+    /* height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+  align-items: center;
+  justify-content: center; */
+    text-align: center;
+    padding: 8px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
