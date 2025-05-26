@@ -3,8 +3,11 @@
 body {
   height: 100vh;
   margin: 0;
+  /* padding: 0; */
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -27,13 +30,43 @@ input {
 
 .header, .footer {
   display: flex;
+  justify-content: space-between;
+  padding: 16px;
 }
 
 .header .left-links, .header .right-links, .footer .left-links, .footer .right-links {
   display: flex;
   list-style-type: none;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
 }
 
-.left-links a, .right-links a {
+.footer {
+  background-color: #eeeeee;
+  /* position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box; */
+}
+
+.header a, .footer a {
+  color: #888077;
   text-decoration: none;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
